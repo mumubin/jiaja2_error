@@ -43,15 +43,19 @@ The extension comes with a ``error`` tag that provides convenient to raise error
 
 .. code-block:: python
 
-    def test_raise_error(self):
-        env = Environment(extensions=[ErrorExtension])
+    from jinja2 import Environment
+
+    from jinja2_error import jinja2_error
+
+    if __name__ == '__main__':
+        env = Environment(extensions=[jinja2_error.ErrorExtension])
         render_text = """
-        {% if 1==1 %}
-          {% error "It's error" %}
-        {% endif %}
-        """
+                {% if 1==1 %}
+                  {% error "It's error" %}
+                {% endif %}
+                """
         template = env.from_string(render_text)
-        self.assertRaises(TemplateRuntimeError, template.render, {"a": "b"})
+        result = template.render({"a": "b"})
 
 
 Ansible Template Usage
