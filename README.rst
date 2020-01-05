@@ -39,7 +39,7 @@ Usage
 Error Tag
 ~~~~~~~~~~~
 
-The extension comes with a ``error`` tag that provides convenient to raise error`.
+The extension comes with a ``error`` tag that provides convenient to raise error.
 
 .. code-block:: python
 
@@ -58,7 +58,7 @@ The extension comes with a ``error`` tag that provides convenient to raise error
         result = template.render({"a": "b"})
 
 
-Ansible Template Usage
+If you use it with ansible template:
 
 .. code-block:: shell
 
