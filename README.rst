@@ -2,22 +2,25 @@
 Jinja2 Error
 ============
 
-|pypi| |pyversions| |license|
+|pypi| |pyversions| |license| |travis-ci|
 
 Jinja2 Extension for Raise Error
 
-.. |pypi| image:: https://img.shields.io/pypi/v/jinja2-time.svg
-   :target: https://pypi.python.org/pypi/jinja2-time
+.. |pypi| image:: https://img.shields.io/pypi/v/jinja2_error.svg
+   :target: https://pypi.python.org/pypi/jinja2_error
    :alt: PyPI Package
 
-.. |pyversions| image:: https://img.shields.io/pypi/pyversions/jinja2-time.svg
-   :target: https://pypi.python.org/pypi/jinja2-time/
+.. |pyversions| image:: https://img.shields.io/pypi/pyversions/jinja2_error.svg
+   :target: https://pypi.python.org/pypi/jinja2_error/
    :alt: PyPI Python Versions
 
-.. |license| image:: https://img.shields.io/pypi/l/jinja2-time.svg
-   :target: https://pypi.python.org/pypi/jinja2-time
+.. |license| image:: https://img.shields.io/pypi/l/jinja2_error.svg
+   :target: https://pypi.python.org/pypi/jinja2_error
    :alt: PyPI Package License
 
+.. |travis-ci| image:: https://travis-ci.org/mumubin/jinja2_error.svg?branch=master
+    :target: https://travis-ci.com/mumubin/jiaja2_error
+    :alt: See Build Status on Travis CI
 
 Installation
 ------------
@@ -53,6 +56,11 @@ The extension comes with a ``error`` tag that provides convenient to raise error
         template = env.from_string(render_text)
         self.assertRaises(TemplateRuntimeError, template.render, {"a": "b"})
 
+
+Ansible Template Usage
+
+.. code-block:: shell
+    ANSIBLE_JINJA2_EXTENSIONS=jinja2_error.ErrorExtension ansible-playbook site.yml -vvv
 
 
 Issues
