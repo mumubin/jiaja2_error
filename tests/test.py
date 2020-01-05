@@ -18,7 +18,7 @@ class TestJinja2Error(unittest.TestCase):
         template = env.from_string(render_text)
         self.assertRaises(TemplateRuntimeError, template.render, {"a": "b"})
 
-    def test_raise_error(self):
+    def test_skip_error(self):
         env = Environment(extensions=[ErrorExtension])
         render_text = """
         {% if 1==2 %}
