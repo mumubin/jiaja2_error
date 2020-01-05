@@ -2,12 +2,12 @@
 Jinja2 Error
 ============
 
-|pypi| |pyversions| |license| |travis-ci|
+|pypi| |pyversions| |license|
 
 Jinja2 Extension for Raise Error
 
 .. |pypi| image:: https://img.shields.io/pypi/v/jinja2_error.svg
-   :target: https://pypi.python.org/pypi/jinja2_error
+   :target: https://pypi.python.org/pypi/jinja2-time
    :alt: PyPI Package
 
 .. |pyversions| image:: https://img.shields.io/pypi/pyversions/jinja2_error.svg
@@ -18,9 +18,6 @@ Jinja2 Extension for Raise Error
    :target: https://pypi.python.org/pypi/jinja2_error
    :alt: PyPI Package License
 
-.. |travis-ci| image:: https://travis-ci.org/mumubin/jinja2_error.svg?branch=master
-    :target: https://travis-ci.com/mumubin/jiaja2_error
-    :alt: See Build Status on Travis CI
 
 Installation
 ------------
@@ -60,6 +57,7 @@ The extension comes with a ``error`` tag that provides convenient to raise error
 Ansible Template Usage
 
 .. code-block:: shell
+
     ANSIBLE_JINJA2_EXTENSIONS=jinja2_error.ErrorExtension ansible-playbook site.yml -vvv
 
 
