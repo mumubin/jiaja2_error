@@ -20,9 +20,10 @@ setup(
     maintainer='Robin Hu',
     maintainer_email='given.hubin@gmail.com',
     license='MIT',
-    url='https://github.com/hackebrot/jinja2-time',
+    url='https://github.com/mumubin/jiaja2_error',
     description='Jinja2 Extension for Raise Error',
     long_description=read('README.rst'),
+    long_description_content_type='text/x-rst',
     packages=[
         'jinja2_error',
     ],

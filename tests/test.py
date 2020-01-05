@@ -28,7 +28,7 @@ class TestJinja2Error(unittest.TestCase):
         template = env.from_string(render_text)
         result = template.render({"a": "b"})
         # print repr(result)
-        self.assertEqual(u'\n        \n        ',result)
+        self.assertEqual(u'\n        \n        ', result)
 
 
 if __name__ == '__main__':

@@ -1,10 +1,10 @@
-===========
-Jinja2 Time
-===========
+============
+Jinja2 Error
+============
 
 |pypi| |pyversions| |license|
 
-Jinja2 Extension for Dates and Times
+Jinja2 Extension for Raise Error
 
 .. |pypi| image:: https://img.shields.io/pypi/v/jinja2-time.svg
    :target: https://pypi.python.org/pypi/jinja2-time
@@ -37,7 +37,7 @@ Usage
 -----
 
 Error Tag
-~~~~~~~
+~~~~~~~~~~~
 
 The extension comes with a ``error`` tag that provides convenient to raise error`.
 
@@ -74,7 +74,7 @@ rooms, and mailing lists is expected to follow the `PyPA Code of Conduct`_.
 License
 -------
 
-Distributed under the terms of the `MIT`_ license, jinja2-time is free and open source software
+Distributed under the terms of the `MIT`_ license, jinja2_error is free and open source software
 
 .. image:: https://opensource.org/trademarks/osi-certified/web/osi-certified-120x100.png
    :align: left
